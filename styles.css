@@ -105,15 +105,23 @@ a{
 }
 /* ====================== Features ================================ */
 .features{
-
+    display:flex;
     border: 1px solid black;
     padding: 60px 0;
-
+    justify-content: space-around;
 
 }
 
 .feature1{
-    display: flex;
+    width: 290px;
+}
+
+.feature2{
+    width: 290px;
+}
+
+.feature3{
+    width: 290px;
 }
 
 
