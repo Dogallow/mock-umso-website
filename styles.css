@@ -128,7 +128,8 @@ a{
 /* =======================Main Section 2 ================================= */
 .main-section2{
     display:flex;
-
+    width: 100%;
+    justify-content: space-around;
 }
 
 .left-main-section2 img{
@@ -136,7 +137,7 @@ a{
 }
 
 .right-main-section2{
-
+    font-size: 24px;
 }
 
 .right-main-section2 h2{
@@ -201,4 +202,92 @@ a{
 }
 .feature-list-item3-detail p{
     font-size: 16px;
+}
+
+
+/* ==============================Main Section 3 ========================================= */
+.main-section3{
+display:flex;
+justify-content: center;
+}
+
+/* =========================Card Container ====================================== */
+
+.card-container{
+    border: 1px solid black;
+    width: 290px;
+    height: 200px;
+    padding: 20px 20px 80px 20px;
+    margin: 10px 20px;
+}
+.price{
+    font-size:42px;
+}
+
+.card-title{
+    font-size: 25px;
+}
+card-header p {
+    font-size: 15.4px;
+}
+
+.card-button button{
+    width: calc(100% - 30px);
+}
+/* ============================Get Started Menu =========================== */
+.get-started-container{
+    width: 100%;
+    text-align: center;
+    
+    margin: 20px 0;
+    padding: 10px;
+    position:relative;
+}
+.get-started-wr{
+    background-color: rgba(181, 180, 174, .5);
+    width: calc(100% - 300px);
+    margin: 0 auto;
+    height: 101px;
+    padding: 10px;
+    position: relative;
+    top:0;
+ 
+}
+
+.started-buttons{
+    
+}
+
+.started-button{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+.contact-us-button{
+    font-size: 16px;
+    background: transparent;
+}
+
+/* ===============================Footer Container========================= */
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.right-footer{
+    display: flex;
+    
+}
+
+.right-footer li{
+    list-style-type: none;
+    
+}
+
+.right-footer a{
+    color: blue;
 }
