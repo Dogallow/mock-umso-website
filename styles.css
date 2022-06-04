@@ -1,3 +1,8 @@
+:root{
+    --mainColor:rgb(235, 223, 203);
+    --secondaryColor: #fff;
+}
+
 body{
     margin:0;
     font-family: 'Roboto';
@@ -5,10 +10,12 @@ body{
     font-weight: 400;
 }
 
-
+h1,h2,h3,h4,h5,h6{
+    font-family:  Joan , 'sans-serif';
+}
 
 .section1{
-    background-color: rgb(235, 223, 203);
+    background-color: var(--mainColor)
 }
 
 header{
@@ -68,11 +75,12 @@ a{
     cursor: pointer;
 
 }
-
+/* ==============Main Section 1 =============== */
 .main-section1{
     display: flex;
-    max-width: 100%;
-    justify-content: space-around;
+    max-width: 1200px;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 .main-section1 button{
@@ -103,6 +111,16 @@ a{
 .left-main-section1 form button{
     height: 40px;
 }
+
+@media screen and (max-width:610px){
+    .main-section1{
+        flex-direction: column;
+    }
+
+    .right-main-section1{
+        align-self: center;
+    }
+}
 /* ====================== Features ================================ */
 .features{
     display:flex;
@@ -130,11 +148,39 @@ a{
     display:flex;
     width: 100%;
     justify-content: space-around;
+
+}
+
+.left.main.section2{
+    display: flex;
+    
 }
 
 .left-main-section2 img{
     width: 470px;
+        margin: 0 auto;
 }
+
+@media screen and (max-width: 700px){
+    .main-section2{
+        flex-direction: column;
+    }
+    
+    .left-main-section2 {
+        width:75%;
+
+        margin: 0 auto;
+
+    }
+
+    .right-main-section2 h2,p{
+        text-align: center;
+    }
+   
+
+}
+
+
 
 .right-main-section2{
     font-size: 24px;
@@ -154,6 +200,7 @@ a{
     font-size: 22px;
     margin: 0px;
 }
+/* ======================== */
 
 .feature-list{
 
@@ -209,6 +256,15 @@ a{
 .main-section3{
 display:flex;
 justify-content: center;
+}
+
+@media screen and (max-width: 691px){
+.main-section3{
+flex-direction: column;
+align-items: center;
+}
+
+
 }
 
 /* =========================Card Container ====================================== */
